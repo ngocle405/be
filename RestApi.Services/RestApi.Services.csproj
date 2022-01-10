@@ -8,8 +8,4 @@
     <ProjectReference Include="..\RestApi.Data\RestApi.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

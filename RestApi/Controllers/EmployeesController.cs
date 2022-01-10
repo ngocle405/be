@@ -31,40 +31,21 @@ namespace RestApi.Controllers
             return StatusCode (200, entities);
         }
         [HttpPost]
-        public IActionResult Add(Employee employee)
+        public IActionResult Add([FromBody] Employee employee)
         {
-            try
-            {
-                 _employeeService.Add(employee);
-                return StatusCode(201,1);
-            }
-            catch(Exception ex)
-            {
-                var rs = new
-                {
-                    useDev=ex.Message,
-
-                };
-                return StatusCode(500,rs);
-            }
+             var entities= _employeeService.Add(employee);
+            return StatusCode(201,entities);
+            
+            
         }
         [HttpPut("{employeeId}")]
         public IActionResult Update(int employeeId, Employee employee)
         {
-            try
-            {
-                _employeeService.Update(employeeId,employee);
+           
+              _employeeService.Update(employeeId,employee);
                 return StatusCode(200, 1);
-            }
-            catch (Exception ex)
-            {
-                var rs = new
-                {
-                    useDev = ex.Message,
-
-                };
-                return StatusCode(500, rs);
-            }
+            
+           
         }
         [HttpDelete("{employeeId}")]
         public IActionResult Delete(int employeeId)

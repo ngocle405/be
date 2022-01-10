@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using RestApi.Data.Entities;
+using RestApi.Data.Exceptions;
 using RestApi.Data.Infrastructure;
 using RestApi.Data.Repositories;
 using RestApi.Services;
@@ -31,7 +32,11 @@ namespace RestApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers(options =>
+            {
+                //dùng middle error thì config tại đây
+                options.Filters.Add<HttpResponseExceptionFilter>();
+            });
             services.AddDbContextPool<AppDBContext>(options =>
              options.UseSqlServer(
                  Configuration.GetConnectionString("DbConnection")));
