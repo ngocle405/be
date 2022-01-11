@@ -17,6 +17,7 @@ namespace RestApi.Data.Entities
 
         public DbSet<Department> Departments { get; set; }//thuộc tính này đại diện cho 1 bảng 1 database,chứa department
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> Users { get; set; }
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    optionsBuilder.UseSqlServer(

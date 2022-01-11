@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qA1iKVU+kYrZbLXK50VcxqN2lsQFPgtPXui+DoPj6qqTcxMdmiXrqohT60QewJlwX/em9Itsy/J1tQyFAMZJAQ==",
+  "dgSpecHash": "pUL7OLJGm+VVvIin06sRTQd9mQQ7rdKbQ6MiuLYvRJezt66tTc+YCRUjpCouEcerEy2VPdqihlx+HE/3yNJeWA==",
   "success": true,
   "projectFilePath": "D:\\ASP.NET Core WEB API\\RestApi\\RestApi\\RestApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.22\\microsoft.aspnetcore.authentication.jwtbearer.3.1.22.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

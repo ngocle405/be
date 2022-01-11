@@ -61,3 +61,4 @@ D:\ASP.NET Core WEB API\RestApi\RestApi\obj\Debug\net5.0\RestApi.pdb
 D:\ASP.NET Core WEB API\RestApi\RestApi\obj\Debug\net5.0\RestApi.genruntimeconfig.cache
 D:\ASP.NET Core WEB API\RestApi\RestApi\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\ASP.NET Core WEB API\RestApi\RestApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\ASP.NET Core WEB API\RestApi\RestApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
