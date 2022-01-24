@@ -12,7 +12,7 @@ namespace RestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+ 
     public class EmployeesController : ControllerBase
     {
         private readonly IEmployeeService _employeeService;
@@ -33,7 +33,7 @@ namespace RestApi.Controllers
             return StatusCode (200, entities);
         }
         [HttpPost]
-        public IActionResult Add([FromBody] Employee employee)
+        public IActionResult Add([FromBody] Ingest employee)
         {
              var entities= _employeeService.Add(employee);
             return StatusCode(201,entities);
@@ -41,7 +41,7 @@ namespace RestApi.Controllers
             
         }
         [HttpPut("{employeeId}")]
-        public IActionResult Update(int employeeId, Employee employee)
+        public IActionResult Update(int employeeId, Ingest employee)
         {
            
               _employeeService.Update(employeeId,employee);

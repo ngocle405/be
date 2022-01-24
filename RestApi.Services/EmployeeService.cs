@@ -12,10 +12,10 @@ namespace RestApi.Services
 {
     public interface IEmployeeService
     {
-        IEnumerable<Employee> GetAll();
+        IEnumerable<Ingest> GetAll();
         object GetById(int employeeId);
-        int? Add(Employee employee);
-        void Update(int employeeId, Employee employee);
+        int? Add(Ingest employee);
+        void Update(int employeeId, Ingest employee);
         void Delete(int employeeId);
     }
     public class EmployeeService : IEmployeeService
@@ -25,7 +25,7 @@ namespace RestApi.Services
         {
             _employeeReponsitory = employeeReponsitory;
         }
-        public IEnumerable<Employee> GetAll()
+        public IEnumerable<Ingest> GetAll()
         {
             return  _employeeReponsitory.GetAll();
         }
@@ -33,7 +33,7 @@ namespace RestApi.Services
         {
            return _employeeReponsitory.GetById(employeeId);
         }
-        public int? Add(Employee employee)
+        public int? Add(Ingest employee)
         {
 
             var isValid = ValidateObject(employee);
@@ -44,13 +44,13 @@ namespace RestApi.Services
             }
             return null;
         }
-        bool ValidateObject(Employee employee)
+        bool ValidateObject(Ingest employee)
         {
             List<string> errorMsg = new List<string>();
 
             //các thông tin bắt buộc nhập
             //1.kiểm tra tất cả các property của đối tượng.
-            var properties = typeof(Employee).GetProperties();
+            var properties = typeof(Ingest).GetProperties();
             foreach (var item in properties)
             {
                 // 1.1 lấy giá trị
@@ -114,7 +114,7 @@ namespace RestApi.Services
             }
             return true;
         }
-        public void Update(int employeeId,Employee employee)
+        public void Update(int employeeId,Ingest employee)
         {
             var isValid = ValidateObject(employee);
             if (isValid == true)

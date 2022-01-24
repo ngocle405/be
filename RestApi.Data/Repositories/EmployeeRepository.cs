@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace RestApi.Data.Repositories
 {
-    public interface IEmployeeReponsitory : IRepository<Employee>
+    public interface IEmployeeReponsitory : IRepository<Ingest>
     {
         void SaveChanges();
     }
-    public class EmployeeRepository:RepositoryBase<Employee>,IEmployeeReponsitory
+    public class EmployeeRepository:RepositoryBase<Ingest>,IEmployeeReponsitory
     {
         public EmployeeRepository(IDbFactory dbFactory):base(dbFactory)
         {

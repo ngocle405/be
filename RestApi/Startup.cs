@@ -47,10 +47,13 @@ namespace RestApi
                  Configuration.GetConnectionString("DbConnection")));
             // configure strongly typed settings object
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            //config DI:
             services.AddTransient<IDbFactory, DbFactory>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IEmployeeReponsitory, EmployeeRepository>();
             services.AddTransient<IEmployeeService, EmployeeService>();
+            services.AddScoped<IIngestRepository, IngestRepository>();
+            services.AddScoped<IIngestService, IngestService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestApi", Version = "v1" });

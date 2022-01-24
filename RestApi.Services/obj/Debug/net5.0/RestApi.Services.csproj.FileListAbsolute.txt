@@ -13,3 +13,18 @@ D:\ASP.NET Core WEB API\RestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Servic
 D:\ASP.NET Core WEB API\RestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.dll
 D:\ASP.NET Core WEB API\RestApi\RestApi.Services\obj\Debug\net5.0\ref\RestApi.Services.dll
 D:\ASP.NET Core WEB API\RestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.pdb
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\RestApi.Services.deps.json
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\RestApi.Services.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\ref\RestApi.Services.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\RestApi.Services.pdb
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\RestApi.Data.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\bin\Debug\net5.0\RestApi.Data.pdb
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.csproj.AssemblyReference.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.AssemblyInfoInputs.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.AssemblyInfo.cs
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.csproj.CoreCompileInputs.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.csproj.CopyComplete
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\ref\RestApi.Services.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Services\obj\Debug\net5.0\RestApi.Services.pdb

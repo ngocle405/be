@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASP.NET Core WEB API\\RestApi\\RestApi.Data\\RestApi.Data.csproj": {}
+    "C:\\Users\\ngoclt\\Desktop\\ReponsitoryRestApi\\RestApi.Data\\RestApi.Data.csproj": {}
   },
   "projects": {
-    "D:\\ASP.NET Core WEB API\\RestApi\\RestApi.Data\\RestApi.Data.csproj": {
+    "C:\\Users\\ngoclt\\Desktop\\ReponsitoryRestApi\\RestApi.Data\\RestApi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASP.NET Core WEB API\\RestApi\\RestApi.Data\\RestApi.Data.csproj",
+        "projectUniqueName": "C:\\Users\\ngoclt\\Desktop\\ReponsitoryRestApi\\RestApi.Data\\RestApi.Data.csproj",
         "projectName": "RestApi.Data",
-        "projectPath": "D:\\ASP.NET Core WEB API\\RestApi\\RestApi.Data\\RestApi.Data.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\ASP.NET Core WEB API\\RestApi\\RestApi.Data\\obj\\",
+        "projectPath": "C:\\Users\\ngoclt\\Desktop\\ReponsitoryRestApi\\RestApi.Data\\RestApi.Data.csproj",
+        "packagesPath": "C:\\Users\\ngoclt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ngoclt\\Desktop\\ReponsitoryRestApi\\RestApi.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ngoclt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

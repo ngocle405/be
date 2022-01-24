@@ -13,3 +13,18 @@ D:\ASP.NET Core WEB API\RestApi\RestApi.Data\obj\Debug\net5.0\ref\RestApi.Data.d
 D:\ASP.NET Core WEB API\RestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.pdb
 D:\ASP.NET Core WEB API\RestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.genruntimeconfig.cache
 D:\ASP.NET Core WEB API\RestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.csproj.AssemblyReference.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\RestApi.Data.deps.json
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\RestApi.Data.runtimeconfig.json
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\RestApi.Data.runtimeconfig.dev.json
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\RestApi.Data.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\ref\RestApi.Data.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\bin\Debug\net5.0\RestApi.Data.pdb
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.csproj.AssemblyReference.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.AssemblyInfoInputs.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.AssemblyInfo.cs
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.csproj.CoreCompileInputs.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\ref\RestApi.Data.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.pdb
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi.Data\obj\Debug\net5.0\RestApi.Data.genruntimeconfig.cache

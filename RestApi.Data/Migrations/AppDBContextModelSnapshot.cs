@@ -19,100 +19,182 @@ namespace RestApi.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("RestApi.Data.Entities.Department", b =>
+            modelBuilder.Entity("RestApi.Data.Entities.BroadcastProgram", b =>
                 {
-                    b.Property<int>("DepartmentId")
+                    b.Property<int>("BroadcastProgramId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("DepartmemtName")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                    b.Property<string>("BroadcastProgramName")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("DepartmentId");
+                    b.HasKey("BroadcastProgramId");
 
-                    b.ToTable("Departments");
+                    b.ToTable("BroadcastProgram");
                 });
 
-            modelBuilder.Entity("RestApi.Data.Entities.Employee", b =>
+            modelBuilder.Entity("RestApi.Data.Entities.Card", b =>
                 {
-                    b.Property<int>("EmployeeId")
+                    b.Property<int>("CardId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("CardCode")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<string>("CardName")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("CardRecipient")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<DateTime>("CardSendDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("DepartmentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
+                    b.Property<string>("CardSender")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("EmployeeCode")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.HasKey("CardId");
 
-                    b.Property<string>("EmployeeName")
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal?>("Salary")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("EmployeeId");
-
-                    b.HasIndex("DepartmentId");
-
-                    b.ToTable("Employees");
+                    b.ToTable("Card");
                 });
 
-            modelBuilder.Entity("RestApi.Data.Entities.User", b =>
+            modelBuilder.Entity("RestApi.Data.Entities.Ingest", b =>
                 {
-                    b.Property<int>("UserId")
+                    b.Property<int>("IngestId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("FullName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("BroadcastProgramId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Password")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<int>("CardId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("UserName")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
 
-                    b.ToTable("Users");
+                    b.Property<string>("FileName")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Genre")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int>("IngestGenreId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProcessingHistory")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Production")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Reporter")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("SavaData")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Subscriber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UpdateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("film")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("IngestId");
+
+                    b.HasIndex("BroadcastProgramId");
+
+                    b.HasIndex("CardId");
+
+                    b.HasIndex("IngestGenreId");
+
+                    b.ToTable("Ingest");
                 });
 
-            modelBuilder.Entity("RestApi.Data.Entities.Employee", b =>
+            modelBuilder.Entity("RestApi.Data.Entities.IngestGenre", b =>
                 {
-                    b.HasOne("RestApi.Data.Entities.Department", null)
-                        .WithMany("Employees")
-                        .HasForeignKey("DepartmentId");
+                    b.Property<int>("IngestGenreId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("IngestGenreName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("IngestGenreId");
+
+                    b.ToTable("IngestGenre");
                 });
 
-            modelBuilder.Entity("RestApi.Data.Entities.Department", b =>
+            modelBuilder.Entity("RestApi.Data.Entities.Ingest", b =>
                 {
-                    b.Navigation("Employees");
+                    b.HasOne("RestApi.Data.Entities.BroadcastProgram", null)
+                        .WithMany("Ingests")
+                        .HasForeignKey("BroadcastProgramId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RestApi.Data.Entities.Card", null)
+                        .WithMany("Ingests")
+                        .HasForeignKey("CardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RestApi.Data.Entities.IngestGenre", null)
+                        .WithMany("Ingests")
+                        .HasForeignKey("IngestGenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("RestApi.Data.Entities.BroadcastProgram", b =>
+                {
+                    b.Navigation("Ingests");
+                });
+
+            modelBuilder.Entity("RestApi.Data.Entities.Card", b =>
+                {
+                    b.Navigation("Ingests");
+                });
+
+            modelBuilder.Entity("RestApi.Data.Entities.IngestGenre", b =>
+                {
+                    b.Navigation("Ingests");
                 });
 #pragma warning restore 612, 618
         }

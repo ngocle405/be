@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "63acd6e7-fd9a-4e08-936b-6d5615f29ad5": {
+      "ProjectGuid": "63acd6e7-fd9a-4e08-936b-6d5615f29ad5",
+      "DisplayName": "RestApi.Data",
+      "ColorIndex": 0
+    },
+    "074b2a4b-3924-4b20-9517-0c7a646d3dc7": {
+      "ProjectGuid": "074b2a4b-3924-4b20-9517-0c7a646d3dc7",
+      "DisplayName": "RestApi",
+      "ColorIndex": 1
+    },
+    "1c1f06bd-2860-43d1-af68-4e03694c60c5": {
+      "ProjectGuid": "1c1f06bd-2860-43d1-af68-4e03694c60c5",
+      "DisplayName": "RestApi.Services",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

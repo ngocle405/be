@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 
 namespace RestApi.Data.Entities
 {
-    [Table("Departments")]
-    public class Department
+    [Table("IngestGenre")]
+    public class IngestGenre
     {
         [Key]
-        public int DepartmentId { get; set; }
+        public int IngestGenreId { get; set; }
         [Required]
-        [MaxLength(255)]
-        public string DepartmemtName { get; set; }
+        [MaxLength(250)]
+        public string IngestGenreName { get; set; }
+        [MaxLength(250)]
         public string Description { get; set; }
-        public ICollection<Employee> Employees { get; set; }
+        public ICollection<Ingest> Ingests { get; set; }
         //nếu employee chưa có thì có ds rỗng
-        public Department()
+        public IngestGenre()
         {
-            Employees = new HashSet<Employee>();
+            Ingests = new HashSet<Ingest>();
         }
     }
 }
