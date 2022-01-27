@@ -64,7 +64,7 @@ namespace RestApi.Data.Migrations
                     Production = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
                     film = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
                     BroadcastProgramId = table.Column<int>(type: "int", nullable: false),
-                    Genre = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    Genre = table.Column<int>(type: "int",nullable: true),
                     IngestGenreId = table.Column<int>(type: "int", nullable: false),
                     CardId = table.Column<int>(type: "int", nullable: false),
                     SavaData = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),

@@ -10,7 +10,11 @@ namespace RestApi.Services
 {
     public interface IIngestService
     {
-        public IEnumerable<Ingest> Get();
+        object GetBroadcastProgram();
+        public object Get();
+        object GetIngestGenre();
+        object AddIngest(Ingest ingest);
+
     }
     public class IngestService : IIngestService
     {
@@ -19,13 +23,28 @@ namespace RestApi.Services
         {
            _IngestRepository = IngestRepository;
         }
+
+        public object AddIngest(Ingest ingest)
+        {
+            return _IngestRepository.AddIngest(ingest);
+        }
+
         /// <summary>
         /// createBy:Lê thanh Ngọc (24/01/2022)
         /// </summary>
         /// <returns>danh sách ingest</returns>
-        public IEnumerable<Ingest> Get()
+        public object Get()
         {
-            return _IngestRepository.GetAll();
+            return _IngestRepository.Get();
+        }
+        public object GetBroadcastProgram()
+        {
+            return _IngestRepository.GetBroadcastProgram();
+        }
+
+        public object GetIngestGenre()
+        {
+            return _IngestRepository.GetIngestGenre();
         }
     }
 }

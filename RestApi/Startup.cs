@@ -21,6 +21,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using System.Text.Json.Serialization;
 
 namespace RestApi
 {
@@ -41,7 +42,11 @@ namespace RestApi
             {
                 //dùng middle error thì config tại đây
                 options.Filters.Add<HttpResponseExceptionFilter>();
+            }).AddJsonOptions(opt =>
+            {
+                opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
             });
+
             services.AddDbContextPool<AppDBContext>(options =>
              options.UseSqlServer(
                  Configuration.GetConnectionString("DbConnection")));
@@ -54,6 +59,14 @@ namespace RestApi
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddScoped<IIngestRepository, IngestRepository>();
             services.AddScoped<IIngestService, IngestService>();
+            services.AddScoped<ICardRepository, CardRepository>();
+            services.AddScoped<IcardService, cardService>();
+            //add cors
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
+                 .AllowAnyHeader());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestApi", Version = "v1" });
@@ -88,6 +101,7 @@ namespace RestApi
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseEndpoints(endpoints =>
             {

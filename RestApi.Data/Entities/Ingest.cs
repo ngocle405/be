@@ -26,9 +26,28 @@ namespace RestApi.Data.Entities
   
         public int BroadcastProgramId { get; set; }
         [ForeignKey("BroadcastProgram")]
-        [MaxLength(250)]
-        public string Genre { get; set; }
-      
+       
+        public GenreType Genre { get; set; }
+        public string GenreName
+
+        {
+            get
+            {
+                switch (Genre)
+                {
+                    case GenreType.BanTin:
+                        return "Bản tin";
+                    case GenreType.ChuyenMuc:
+                        return "Chuyên mục";
+                    case GenreType.PhongSu:
+                        return "Phóng sự";
+                    case GenreType.ChuongTrinhKhac:
+                        return "Chương trình khác";
+                    default: return null;
+                }
+            }
+        }
+
         public int IngestGenreId { get; set; }
         [ForeignKey("IngestGenre")]
 
@@ -36,7 +55,7 @@ namespace RestApi.Data.Entities
         [ForeignKey("Card")]
 
         [MaxLength(250)]
-        public string SavaData { get; set; }
+        public string SaveData { get; set; }
         public string ProcessingHistory { get; set; }
         public Status Status { get; set; }
         public string StatusName 

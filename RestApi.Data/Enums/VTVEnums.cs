@@ -13,4 +13,12 @@ namespace RestApi.Data.Enums
         DaNhan=3,//đã nhận
         DaTraThe=2//đã trả thẻ
     }
+    public enum GenreType
+    {
+        BanTin=1,
+        ChuyenMuc = 2,
+        PhongSu = 3,
+        ChuongTrinhKhac = 4
+
+    }
 }
