@@ -14,6 +14,7 @@ namespace RestApi.Data.Repositories
         object GetIngestGenre();
         object GetBroadcastProgram();
         object Get();
+        public IEnumerable<Ingest> Gets();
     }
     public class IngestRepository:RepositoryBase<Ingest>,IIngestRepository
     {
@@ -34,6 +35,8 @@ namespace RestApi.Data.Repositories
         public object AddIngest(Ingest ingest)
         {
             ingest.CreateDate = DateTime.Now;
+            ingest.UpdateDate =DateTime.Now;
+            ingest.CreateBy = "Lê Thanh Ngọc";
             ingest.IngestGenreId = 1;
             ingest.Status = 0;//
             DbContext.Ingests.Add(ingest);
@@ -78,6 +81,12 @@ namespace RestApi.Data.Repositories
             return entities;
         }
 
-        
+        public IEnumerable<Ingest> Gets()
+        {
+            var entities = DbContext.Ingests.ToList();
+            return entities;
+        }
+
+
     }
 }

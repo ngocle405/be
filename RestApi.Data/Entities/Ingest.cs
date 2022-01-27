@@ -15,18 +15,30 @@ namespace RestApi.Data.Entities
         [Key]
         public int IngestId { get; set; }
         [MaxLength(250)]
+        [NotEmpty]
+        [PropertyName("Tên đề tài")]
+        [propMaxLength(50)]
         public string FileName { get; set; }
         [MaxLength(250)]
+        [NotEmpty]
+        [PropertyName("Phóng viên")]
         public string Reporter { get; set; }
+        [NotEmpty]
+        [PropertyName("Người đăng ký")]
         public string Subscriber { get; set; }
         [MaxLength(250)]
+        [NotEmpty]
+        [PropertyName("Đơn vị sản xuất")]
         public string Production { get; set; }
         [MaxLength(250)]
+        [NotEmpty]
+        [PropertyName("Quay phim")]
         public string film { get; set; }//quay fim
-  
+        [NotEmpty]
+        [PropertyName("Chương trình phát sóng")]
         public int BroadcastProgramId { get; set; }
         [ForeignKey("BroadcastProgram")]
-       
+        [NotEmpty]
         public GenreType Genre { get; set; }
         public string GenreName
 
@@ -76,6 +88,7 @@ namespace RestApi.Data.Entities
                 }
             }
         }
+        [CheckDate]
         public DateTime CreateDate { get; set; }
       
         public string CreateBy { get; set; }

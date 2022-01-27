@@ -126,3 +126,6 @@ C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\obj\Debug\net5.0\RestApi.dll
 C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\obj\Debug\net5.0\ref\RestApi.dll
 C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\obj\Debug\net5.0\RestApi.pdb
 C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\obj\Debug\net5.0\RestApi.genruntimeconfig.cache
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\bin\Debug\net5.0\EPPlus.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ngoclt\Desktop\ReponsitoryRestApi\RestApi\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
