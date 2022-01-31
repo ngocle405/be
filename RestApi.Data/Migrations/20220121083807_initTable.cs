@@ -67,7 +67,7 @@ namespace RestApi.Data.Migrations
                     Genre = table.Column<int>(type: "int",nullable: true),
                     IngestGenreId = table.Column<int>(type: "int", nullable: false),
                     CardId = table.Column<int>(type: "int", nullable: false),
-                    SavaData = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
+                    SaveData = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
                     ProcessingHistory = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "date", nullable: false),
